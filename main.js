@@ -24,4 +24,16 @@ function generateAkan(){
 
     console.log(gender,maleDays[day]["value"])
 
+    var akan = document.getElementById("akanNames");
+
+    if (gender=='male'){
+        akan.textContent = maleDays[day]["value"];
+        
+    }
+    else{
+        akan.textContent = femaleDays[day]["value"];
+
+    }
+
+
 }
