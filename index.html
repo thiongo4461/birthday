@@ -11,20 +11,21 @@
 
 </head>
 <body>
-    <div class="container bg-info">
+    <div class="container">
         <!-- Content here -->
         <h1>Birthday</h1>
-        <form onsubmit="generateAkan(); return false " >
-            <select id="gender" class="form-select" aria-label="Default select example">
+        <p>Welcome to birthday, please select your gender and birthday to get your akan name.</p>
+        <form onsubmit="generateAkan(); return false " class="d-flex flex-column ">
+            <select id="gender" class="form-select p-4 m-2" aria-label="Default select example">
                 <option disabled>Choose your gender:</option>
                 <option value="male">male</option>
                 <option value="female">female</option>
             </select>
-            <input type="date" id="birthday">
-            <input class="btn btn-success" type="submit" value="submit">
+            <input type="date" id="birthday" class="p-4 m-2">
+            <input class="btn btn-info p-4 m-2" type="submit" value="submit">
         </form>
 
-        <div class="container-sm bg-success p-3 m-2" id="akanNames"></div>
+        <div class="container-sm  p-3 m-2 rounded" id="akanNames"></div>
     </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 <script  src="main.js"></script>

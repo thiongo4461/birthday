@@ -27,11 +27,11 @@ function generateAkan(){
     var akan = document.getElementById("akanNames");
 
     if (gender=='male'){
-        akan.textContent = maleDays[day]["value"];
+        akan.textContent = `Your Akan name would be ${maleDays[day]["value"]}`;
         
     }
     else{
-        akan.textContent = femaleDays[day]["value"];
+        akan.textContent = `Your Akan name would be ${femaleDays[day]["value"]}`;
 
     }
 
